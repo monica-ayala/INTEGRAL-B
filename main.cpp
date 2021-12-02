@@ -1,4 +1,3 @@
-
 #include "quadratic.h"
 #include "Central.h"
 #include <iostream>
@@ -20,7 +19,6 @@ bool menu();
 void LoadCentral(ifstream &file);
 int maxMedia(const char* file);
 void addAdress();
-
 unsigned int myHash(const string s) {
 	unsigned int acum = 0;
 	for (unsigned int i = 0; i < s.size(); i++) {
@@ -29,17 +27,6 @@ unsigned int myHash(const string s) {
 	return acum;
 }
 Quadratic <string, int> quad_hash(10, "empty" , myHash);
-
-void LoadCentral(ifstream &file){
-
-  for(int i=0;i<=maxMedia("Info.txt");i++){
-    int ID;
-    string name;
-    file >> name;
-    file >> ID;
-    vectorCentral.push_back(new central(name, ID)); 
-  }
-}
 
 int main() {
   central prueba("prueba",12);
@@ -56,11 +43,17 @@ int main() {
       break;
     }
   }
-  
-
 }
 
-
+void LoadCentral(ifstream &file){
+  for(int i=0;i<=maxMedia("Info.txt");i++){
+    int ID;
+    string name;
+    file >> name;
+    file >> ID;
+    vectorCentral.push_back(new central(name, ID)); 
+  }
+}
 
 bool menu(){
   Graph g;
