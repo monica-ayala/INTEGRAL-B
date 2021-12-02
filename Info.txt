@@ -1,0 +1,7 @@
+Celaya 38000
+CDMX 00810
+Queretaro 76000
+Guanajuato 36010
+Puebla 72000
+Hidalgo 78557
+San_Miguel 37700
