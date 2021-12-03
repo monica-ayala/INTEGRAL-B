@@ -116,3 +116,105 @@ int maxMedia(const char* file){
   int c = std::count(istreambuf_iterator<char>(inFile),istreambuf_iterator<char>(), '\n');
   return c;
 }
+
+
+/* 
+**************CASO DE PRUEBA 1:*************** 
+Output:
+    ------------MENU------------------
+
+    1. Lista de centrales de autobus [nombre]
+    2. Lista de centrales de autobus [código postal]
+    3. Calcular ruta
+    4. Ver matriz de adjacencia
+    5. Ver lista de IDs de las centrales
+    6. Salir
+Input: 1
+Output:
+    0- Celaya
+    1- CDMX
+    2- Queretaro
+    3- Guanajuato
+    4- Puebla
+    5- Hidalgo
+
+**************CASO DE PRUEBA 2:*************** 
+Output:
+    ------------MENU------------------
+
+    1. Lista de centrales de autobus [nombre]
+    2. Lista de centrales de autobus [código postal]
+    3. Calcular ruta
+    4. Ver matriz de adjacencia
+    5. Ver lista de IDs de las centrales
+    6. Salir
+Input: 2
+Output:
+    0   38000
+    1   810
+    2   76000
+    3   36010
+    4   72000
+    5   78557
+
+**************CASO DE PRUEBA 3:*************** 
+Output:
+    ------------MENU------------------
+
+    1. Lista de centrales de autobus [nombre]
+    2. Lista de centrales de autobus [código postal]
+    3. Calcular ruta
+    4. Ver matriz de adjacencia
+    5. Ver lista de IDs de las centrales
+    6. Salir
+Input: 3
+Output: ¿En qué nodo te encuentras?
+Input: 1
+Output: ¿A dónde quieres ir?
+Input: 3
+Output:
+    recorrió: 1 0 2 3 camino a tomar: 1 3
+
+**************CASO DE PRUEBA 4:*************** 
+Output:
+    ------------MENU------------------
+
+    1. Lista de centrales de autobus [nombre]
+    2. Lista de centrales de autobus [código postal]
+    3. Calcular ruta
+    4. Ver matriz de adjacencia
+    5. Ver lista de IDs de las centrales
+    6. Salir
+Input: 4
+Output:
+    Matriz de Adjacencia
+
+        0 1 2 3 4 5 6 
+        — — — — — — — 
+    0 | 0 1 0 0 1 0 0 
+    1 | 1 0 1 1 0 0 0 
+    2 | 0 1 0 0 0 0 0 
+    3 | 0 1 0 0 0 0 1 
+    4 | 1 0 0 0 0 1 0 
+    5 | 0 0 0 0 1 0 0 
+    6 | 0 0 0 1 0 0 0 
+**************CASO DE PRUEBA 5:*************** 
+Output:
+    ------------MENU------------------
+
+    1. Lista de centrales de autobus [nombre]
+    2. Lista de centrales de autobus [código postal]
+    3. Calcular ruta
+    4. Ver matriz de adjacencia
+    5. Ver lista de IDs de las centrales
+    6. Salir
+Input: 5
+Output:
+    (0 CDMX : 12) 
+    (1 Celaya : 11) 
+    (2 Queretaro : 13) 
+    (5 Puebla : 15) 
+    (6 Hidalgo : 16) 
+    (9 Guanajuato : 14) 
+
+*/

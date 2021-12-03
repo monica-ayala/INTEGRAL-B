@@ -1,1 +1,1 @@
-recorrió: 1 0 2 camino a tomar: 1 2
+recorrió: 1 0 2 3 camino a tomar: 1 3
